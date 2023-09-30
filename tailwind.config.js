@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         'primary': '#2EC5CE',
         'secondary': '#D5FAFC',
+        'defaultBlack': '#0B0D17',
+        'defaultGrey': '#D9DBE1',
       },
       fontSize: {
         h1: ["72px", "98px"],
@@ -19,7 +21,8 @@ module.exports = {
         caption: ["14px", "28px"],
       },
       fontFamily: {
-        inter: "Inter",
+        inter: ['Inter', 'sans'],
+        nanum: ['Nanum Pen Sscript', 'cursive'],
       }
     },
   },
