@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="/css/output.css" rel="stylesheet"/>
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet"/>
+    <link href="NanumPenScript-Regular.ttf" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <script src="/node_modules/wow.js/dist/wow.js"></script>
+    <script src="Final.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <style>
+        .attention:hover {
+            animation-duration: 1s;
+            animation-name: pulse;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center">
+    <div id="mobiMenu" class="fixed top-0 right-0 h-full w-64 bg-secondary flex flex-col px-4 py-4 animate__animated animate__slideOutRight">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 flex ml-auto" onclick="toggleMenu()">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg><!--X Icon-->
+        <hr/>
+        <div class="font-inter text-caption">About</div>
+        <div class="font-inter text-caption">Products</div>
+        <div class="font-inter text-caption">Pricing</div>
+        <div class="font-inter text-caption">Blog</div>
+        <div class="font-inter text-caption">Jobs</div>
+        <div class="font-inter text-caption">More</div>          
+    </div> <!--Mobi Menu-->
+    <div class="flex flex-col items-center justify-center md:px-[165px] px-20 pt-8 w-full md:gap-24 gap-12">
+        <div class="flex flex-row w-full items-center justify-center">
+            <div class="flex flex-row items-center justify-center gap-8 mr-auto">
+                <img class="attention" src="Image/Logo.svg"/>                         
+                <div class="font-inter text-caption font-semibold md:block hidden">About</div>
+                <div class="font-inter text-caption font-semibold md:block hidden">Products</div>
+                <div class="font-inter text-caption font-semibold md:block hidden">Pricing</div>
+                <div class="font-inter text-caption font-semibold md:block hidden">Blog</div>
+                <div class="font-inter text-caption font-semibold md:block hidden">Jobs</div>
+                <div class="md:flex flex-row items-center justify-center gap-1 hidden">
+                    <div class="font-inter font-semibold text-caption">More</div>
+                    <img src="Image/chevron-down.svg"/>
+                </div>
+            </div>
+            <div class="md:flex flex-row items-center justify-center gap-3 hidden">
+                <img src="Image/Google Play Badge.svg"/>
+                <img src="Image/App Store Badge.svg"/>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden block" onclick="toggleMenu()">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+            </svg><!--Hambuger Icon-->     
+        </div> <!--Menu bar-->
+        <div class="flex flex-col w-full items-center justify-center gap-8 wow animate__animated animate__pulse">
+            <div class="text-h2 md:text-h1 font-inter font-extrabold text-center">Track your product sales from anywhere, anytime.</div>
+            <button class="bg-primary font-inter text-white text-body rounded-md py-3 px-8 attention">Start Selling</button>
+        </div> <!--CTA-->
+        <div class="w-full items-center gap-12 grid grid-cols-1">
+            <div class="text-caption font-bold uppercase font-inter w-full mr-auto">Selected works</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+                <div class="flex flex-col gap-[30px]">
+                    <img class="wow animate__animated animate__fadeInUp" src="Image/Project Cover 1.png"/>
+                    <img class="wow animate__animated animate__fadeInUp" src="Image/Project Cover 3.png"/>
+                    <img class="wow animate__animated animate__fadeInUp" src="Image/Project Cover 5.png"/>
+                </div>
+                <div class="flex flex-col gap-[30px]">
+                    <img class="wow animate__animated animate__fadeInUp" src="Image/Project Cover 2.png"/>
+                    <img class="wow animate__animated animate__fadeInUp" src="Image/Project Cover 4.png"/>
+                    <img class="wow animate__animated animate__fadeInUp" src="Image/Project Cover 6.png"/>
+                </div>
+            </div>
+        </div> <!--Selected works-->
+        <div class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 w-full">
+            <div class="flex flex-col justify-center items-center bg-primary py-[246px] pl-[165px] pr-[95px] wow animate__animated animate__fadeInUp">
+                <div class="text-h1 font-extrabold text-slate-900">Happy customers</div>
+                <div class="text-lead1 text-slate-900">Feedback from these happy customers helps us in reaching the heights</div>
+            </div>
+            <div class="flex flex-col justify-center items-start bg-secondary py-8 pr-[165px] wow animate__animated animate__fadeInUp">
+                <div class="flex flex-col items-start justify-center p-10 gap-6 bg-white">
+                    <div class="ml-auto"><img src="Image/Quote Mark.png"/></div>
+                    <div class="flex flex-row gap-4">
+                        <div>
+                            <img src="Image/ClientPicture.png"/>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-lead1 font-bold text-slate-900">Jenny Wilson</div>
+                            <div class="text-caption text-slate-600">Vice President</div>
+                        </div>
+                    </div>
+                    <div class="text-lead1 text-slate-900">We had an incredible experience working with Landify and were impressed they made such a big difference in only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to get familiar with the product concept so quickly. It acted as a catalyst to take our design to the next level and get more eyes on our product.</div>
+                    <div class="flex flex-row w-full">
+                        <div><img src="Image/Logo.png"/></div>
+                        <div class="ml-auto"><img src="Image/Arrow Navigation.png"/></div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--Testimonial-->
+        <div class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 w-full">
+            <div class="wow animate__animated animate__fadeInUp"><img src="Image/Creative.svg"/></div>
+            <div class="flex flex-col justify-center items-start gap-8 px-10 wow animate__animated animate__fadeInUp">
+                <div class="flex flex-col items-start">
+                    <div class="text-caption uppercase font-bold text-[#2EC5CE]">Consultant</div>
+                    <div class="text-h3 font-extrabold text-slate-900">Headline</div>
+                </div>
+                <div class="text-lead1 text-slate-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</div>
+                <div class="flex flex-row justify-center gap-1">
+                    <div class="text-body text-[#8C30F5]">Get Started</div>
+                    <div><img src="Image/right-arrow.svg"/></div>
+                </div>
+            </div>
+        </div> <!--Headline-->
+        <div class="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 w-full wow animate__animated animate__fadeInBottomLeft">
+            <div class="flex flex-col items-start mr-auto w-full">
+                <div class="text-h2 font-extrabold">150,000+</div>
+                <div class="text-lead1 mt-2">Customer who use Landify UI Kit to build their new startup landing page</div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="flex flex-row justify-center gap-y-7">
+                    <img src="Image/Airbnb Logo.png"/>
+                    <img src="Image/Amazon.png"/>
+                    <img src="Image/LogoFedEx.png"/>
+                    <img src="Image/Microsoft.png"/>
+                </div>
+                <div class="flex flex-row justify-center gap-y-7">
+                    <img src="Image/Google.png"/>
+                    <img src="Image/Ola.png"/>
+                    <img src="Image/Walmart.png"/>
+                    <img src="Image/Oyo.png"/>
+                </div>
+            </div>
+        </div> <!--Partners-->
+        <div class="flex flex-col items-start gap-12 w-full max-w-6xl wow animate__animated animate__fadeInBottomLeft">
+            <div class="flex justify-items-start max-w-135">
+                <div class="text-h3 md:text-h2 font-extrabold">Benefits of working with us</div>
+            </div>
+            <div class="flex flex-row items-start gap-10">
+                <div class="flex flex-row items-start gap-8 max-w-144">
+                    <img src="Image/Icon1.svg"/>
+                    <div class="flex flex-col items-start">
+                        <div class="text-h5">Timezone ain't nothing</div>
+                        <div class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start gap-8 max-w-144">
+                    <img src="Image/Icon2.svg"/>
+                    <div class="flex flex-col items-start">
+                        <div class="text-h5">Full spectrum of services</div>
+                        <div class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</div>
+                    </div>
+                </div>
+            </div>        
+            <div class="flex flex-row items-start gap-10">
+                <div class="flex flex-row items-start gap-8 max-w-144">
+                    <img src="Image/Icon3.svg"/>
+                    <div class="flex flex-col items-start">
+                        <div class="text-h5">Impossible? We’re on it</div>
+                        <div class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-start gap-8 max-w-144">
+                    <img src="Image/Icon 4.svg"/>
+                    <div class="flex flex-col items-start">
+                        <div class="text-h5">Flexible work terms</div>
+                        <div class="text-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</div>
+                    </div>
+                </div>
+            </div>        
+        </div> <!--Benefits-->
+        <div class="flex justify-center relative w-full wow animate__animated animate__bounce">
+            <img src="Image/iPhone X.png" class="bottom-0 translate-x-2"/>
+            <img src="Image/Circle BG.png" class="bottom-0 -z-10 absolute"/>
+        </div> <!--Iphone-->
+    </div> <!--Main content-->
+    <div class="w-full py-24 px-[165px] bg-defaultBlack">
+        <div class="grid grid-cols-3 md:grid-cols-6 md:gap-[30px] wow animate__animated animate__fadeInUp">
+            <div>
+                <img src="Image/Company Logo.png"/>
+            </div>
+            <div class="flex flex-col items-start gap-3">
+                <div class="text-lead1 font-bold font-inter text-white">Product</div>
+                <div class="text-caption font-inter text-defaultGrey">Overview</div>
+                <div class="flex flex-row justify-start gap-2">
+                    <div class="text-caption font-inter text-defaultGrey">Features</div>
+                    <div class="text-caption font-nanum text-[#2EC5CE]">new</div>
+                </div>
+                <div class="text-caption font-inter text-defaultGrey">Tutorials</div>
+                <div class="text-caption font-inter text-defaultGrey">Pricing</div>
+                <div class="text-caption font-inter text-defaultGrey">Releases</div>
+            </div>
+            <div class="flex flex-col items-start gap-3">
+                <div class="text-lead1 font-bold font-inter text-white">Company</div>
+                <div class="text-caption font-inter text-defaultGrey">About</div>
+                <div class="text-caption font-inter text-defaultGrey">Press</div>
+                <div class="text-caption font-inter text-defaultGrey">Careers</div>
+                <div class="text-caption font-inter text-defaultGrey">Contact</div>
+                <div class="text-caption font-inter text-defaultGrey">Partners</div>
+            </div>
+            <div class="flex flex-col items-start gap-3">
+                <div class="text-lead1 font-bold font-inter text-white">Support</div>
+                <div class="text-caption font-inter text-defaultGrey">Help Center</div>
+                <div class="text-caption font-inter text-defaultGrey">Safety Center</div>
+                <div class="text-caption font-inter text-defaultGrey">Legal</div>
+                <div class="text-caption font-inter text-defaultGrey">Privacy Policy</div>
+                <div class="text-caption font-inter text-defaultGrey">Status</div>
+            </div>
+            <div class="flex flex-col items-start gap-3">
+                <div class="text-lead1 font-bold font-inter text-white">Legal</div>
+                <div class="text-caption font-inter text-defaultGrey">Cookies Policy</div>
+                <div class="text-caption font-inter text-defaultGrey">Privacy Policy</div>
+                <div class="text-caption font-inter text-defaultGrey">Terms of Service</div>
+                <div class="text-caption font-inter text-defaultGrey">Law Enforcement</div>
+                <div class="text-caption font-inter text-defaultGrey">Status</div>
+            </div>
+            <div class="flex flex-col items-start gap-3">
+                <div class="text-lead1 font-bold font-inter text-white">Follow Us</div>
+                <div class="text-caption font-inter text-defaultGrey">Facebook</div>
+                <div class="text-caption font-inter text-defaultGrey">Twitter</div>
+                <div class="text-caption font-inter text-defaultGrey">Dribbble</div>
+                <div class="text-caption font-inter text-defaultGrey">Instagram</div>
+                <div class="text-caption font-inter text-defaultGrey">LinkedIn</div>
+            </div>
+        </div>
+    </div> <!--Footer-->
+</body>
+</html>
